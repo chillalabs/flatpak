@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>chillalabs Flatpak</title>
+  <link rel="icon" href="icons/2fip.svg">
+  <style>
+    :root { --bg: #f6f6f8; --fg: #1e1e2e; --muted: #5c5f77; --card: #ffffff; --code: #eceef4; --accent: #2f8fa1; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #1e1e2e; --fg: #cdd6f4; --muted: #a6adc8; --card: #262637; --code: #313244; --accent: #44adc0; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.55 system-ui, sans-serif; }
+    main { max-width: 720px; margin: 0 auto; padding: 48px 16px; }
+    header { display: flex; gap: 20px; align-items: center; margin-bottom: 32px; }
+    header img { width: 96px; height: 96px; flex: none; }
+    h1 { margin: 0; font-size: 2rem; }
+    header p { margin: 4px 0 0; color: var(--muted); }
+    section { background: var(--card); border-radius: 12px; padding: 20px 24px; margin-bottom: 16px; }
+    h2 { margin: 0 0 8px; font-size: 1.1rem; }
+    pre { background: var(--code); border-radius: 8px; padding: 12px 14px; overflow-x: auto; margin: 8px 0; }
+    code { font: 14px/1.5 ui-monospace, monospace; }
+    a { color: var(--accent); }
+    .button { display: inline-block; background: var(--accent); color: #fff; text-decoration: none;
+              padding: 10px 18px; border-radius: 999px; font-weight: 600; }
+    small { color: var(--muted); }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icons/2fip.svg" alt="">
+    <div>
+      <h1>2fip</h1>
+      <p>A keyboard-driven, dual-pane file manager for COSMIC, inspired by Total Commander.</p>
+    </div>
+  </header>
+
+  <section>
+    <h2>Install</h2>
+    <p><a class="button" href="2fip.flatpakref">Install with Flatpak</a></p>
+    <p>Or in a terminal:</p>
+    <pre><code>flatpak install --user https://chillalabs.github.io/flatpak/2fip.flatpakref</code></pre>
+    <p>Updates come with <code>flatpak update</code>. The runtime is installed from Flathub automatically.</p>
+  </section>
+
+  <section>
+    <h2>Add the repository</h2>
+    <pre><code>flatpak remote-add --user --if-not-exists chillalabs https://chillalabs.github.io/flatpak/chillalabs.flatpakrepo</code></pre>
+    <small>Signed with the key <a href="chillalabs.gpg">chillalabs.gpg</a>
+      (fingerprint B8DB 59C9 D8DE 325B ED44 7464 D0A0 9A1D 8E8E DB64).</small>
+  </section>
+
+  <section>
+    <h2>Source code</h2>
+    <p><a href="https://github.com/chillalabs/cosmic-2fip">github.com/chillalabs/cosmic-2fip</a> — GPL-3.0</p>
+  </section>
+</main>
+</body>
+</html>
