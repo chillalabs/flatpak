@@ -24,5 +24,5 @@ flatpak remote-add --user --if-not-exists chillalabs https://chillalabs.github.i
   fingerprint `B8DB 59C9 D8DE 325B ED44  7464 D0A0 9A1D 8E8E DB64`)
 - `2fip.flatpakref`, `chillalabs.flatpakrepo` — install and remote files
 
-Built and published from [chillalabs/cosmic-2fip](https://github.com/chillalabs/cosmic-2fip)
+Built and published from [chillalabs/twofip](https://github.com/chillalabs/twofip)
 with `just flatpak-publish`.
